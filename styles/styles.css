@@ -29,6 +29,34 @@ header {
     width: 100%;
 }
 
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 80px;
+    width: 100%;
+}
+
+nav a {
+    color: var(--hero-secondary-text-color);
+    text-decoration: none;
+}
+
+.links {
+    align-self: center;
+    justify-self: end;
+}
+
+.links a {
+    margin-left: 20px;
+}
+
+#logo {
+    color: var(--header-logo-text-color);
+    font-size: 24px;
+    justify-self: start;
+}
+
 .hero {
     display: flex;
     padding: 80px;
@@ -41,17 +69,18 @@ header {
 h1 {
     color: var(--hero-main-text-color);
     font-size: var(--xxlarge-font-size);
+    font-weight: bolder;
 }
 
 
-header p {
+.hero p {
     color: var(--hero-secondary-text-color);
     margin: 8px 0;
     margin-right: 40px;
     font-size: var(--small-font-size);
 }
 
-header button {
+.hero button {
     color: var(--hero-secondary-text-color);
     background-color: var(--button-call-to-action-color);
     font-size: var(--small-font-size);
