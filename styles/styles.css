@@ -1,4 +1,4 @@
-::root {
+:root {
     --dark-background-color: #1F2937;
     --hero-main-text-color: #f9FAF8;
     --hero-secondary-text-color: #E5E7EB;
@@ -18,8 +18,54 @@
     padding: 0;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* border: 1px solid black; */
 }
 
 header {
+    align-items: center;
     background-color: var(--dark-background-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    padding: 80px;
+}
+
+.description {
+    width: 50%;
+}
+
+h1 {
+    color: var(--hero-main-text-color);
+    font-size: var(--xxlarge-font-size);
+}
+
+
+header p {
+    color: var(--hero-secondary-text-color);
+    margin: 8px 0;
+    margin-right: 40px;
+    font-size: var(--small-font-size);
+}
+
+header button {
+    color: var(--hero-secondary-text-color);
+    background-color: var(--button-call-to-action-color);
+    font-size: var(--small-font-size);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--hero-secondary-text-color);
+    background-color: rgb(97 105 114);
+    width: 50%;
 }
